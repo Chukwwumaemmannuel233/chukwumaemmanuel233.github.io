@@ -14,17 +14,16 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true,
+    unoptimized: true, // Fix image loading for static exports
   },
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
-  // Add these settings for GitHub Pages
-  output: 'export',
-  basePath: '',
-  assetPrefix: '',
+  output: 'export', // Required for GitHub Pages static export
+  basePath: "/chukwumaemmanuel233.github.io", // Must match your repo name
+  assetPrefix: "/chukwumaemmanuel233.github.io/",
 }
 
 mergeConfig(nextConfig, userConfig)
