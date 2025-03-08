@@ -21,6 +21,10 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  // Add these settings for GitHub Pages
+  output: 'export',
+  basePath: '',
+  assetPrefix: '',
 }
 
 mergeConfig(nextConfig, userConfig)
