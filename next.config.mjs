@@ -22,8 +22,8 @@ const nextConfig = {
     parallelServerCompiles: true,
   },
   output: 'export', // Required for GitHub Pages static export
-  basePath: "/chukwumaemmanuel233.github.io", // Must match your repo name
-  assetPrefix: "/chukwumaemmanuel233.github.io/",
+  basePath: "/chukwumas-flyer", // Must match your repo name
+  assetPrefix: "/chukwumas-flyer",
 }
 
 mergeConfig(nextConfig, userConfig)
